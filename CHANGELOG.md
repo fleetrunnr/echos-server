@@ -7,13 +7,13 @@ Add `stop` command
 Allow variables in .env file to set options in the server configuration.
 
 ### Updates
--   Auth Host: `ECHOS_SERVER_SERVER_AUTH_HOST` *Note*: This option will fall back to the `ECHOS_SERVER_SERVER_HOST` option as the default if that is set in the .env file.
+-   Auth Host: `ECHOS_SERVER_AUTH_HOST` *Note*: This option will fall back to the `ECHOS_SERVER_HOST` option as the default if that is set in the .env file.
 
--   *Host*: `ECHOS_SERVER_SERVER_HOST`
+-   *Host*: `ECHOS_SERVER_HOST`
 
--   *Port*: `ECHOS_SERVER_SERVER_PORT`
+-   *Port*: `ECHOS_SERVER_PORT`
 
--   *Debug*: `ECHOS_SERVER_SERVER_DEBUG`
+-   *Debug*: `ECHOS_SERVER_DEBUG`
 
 # 1.3.3
 

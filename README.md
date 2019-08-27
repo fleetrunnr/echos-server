@@ -98,13 +98,13 @@ Edit the default configuration of the server by adding options to your **echos-s
 If a .env file is found in the same directory as the echos-server.json
 file, the following options can be overridden:
 
-- `authHost`: `ECHOS_SERVER_SERVER_AUTH_HOST` *Note*: This option will fall back to the `ECHOS_SERVER_SERVER_HOST` option as the default if that is set in the .env file.
-- `host`: `ECHOS_SERVER_SERVER_HOST`
-- `port`: `ECHOS_SERVER_SERVER_PORT`
-- `devMode`: `ECHOS_SERVER_SERVER_DEBUG`
-- `databaseConfig.redis.host`: `ECHOS_SERVER_SERVER_REDIS_HOST`
-- `databaseConfig.redis.port`: `ECHOS_SERVER_SERVER_REDIS_PORT`
-- `databaseConfig.redis.password`: `ECHOS_SERVER_SERVER_REDIS_PASSWORD`
+- `authHost`: `ECHOS_SERVER_AUTH_HOST` *Note*: This option will fall back to the `ECHOS_SERVER_HOST` option as the default if that is set in the .env file.
+- `host`: `ECHOS_SERVER_HOST`
+- `port`: `ECHOS_SERVER_PORT`
+- `devMode`: `ECHOS_SERVER_DEBUG`
+- `databaseConfig.redis.host`: `ECHOS_SERVER_REDIS_HOST`
+- `databaseConfig.redis.port`: `ECHOS_SERVER_REDIS_PORT`
+- `databaseConfig.redis.password`: `ECHOS_SERVER_REDIS_PASSWORD`
 
 
 ### Running with SSL

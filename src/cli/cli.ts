@@ -27,13 +27,17 @@ export class Cli {
      * Allowed environment variables.
      */
     envVariables: any = {
-        'ECHOS_SERVER_SERVER_AUTH_HOST': 'authHost',
-        'ECHOS_SERVER_SERVER_DEBUG': 'devMode',
-        'ECHOS_SERVER_SERVER_HOST': 'host',
-        'ECHOS_SERVER_SERVER_PORT': 'port',
-        'ECHOS_SERVER_SERVER_REDIS_HOST': 'databaseConfig.redis.host',
-        'ECHOS_SERVER_SERVER_REDIS_PORT': 'databaseConfig.redis.port',
-        'ECHOS_SERVER_SERVER_REDIS_PASSWORD': 'databaseConfig.redis.password',
+        'ECHOS_SERVER_AUTH_HOST': 'authHost',
+        'ECHOS_SERVER_DEBUG': 'devMode',
+        'ECHOS_SERVER_HOST': 'host',
+        'ECHOS_SERVER_PORT': 'port',
+        'ECHOS_SERVER_REDIS_HOST': 'databaseConfig.redis.host',
+        'ECHOS_SERVER_REDIS_PORT': 'databaseConfig.redis.port',
+        'ECHOS_SERVER_REDIS_PASSWORD': 'databaseConfig.redis.password',
+        'ECHOS_SERVER_SSL_CERT_PATH': 'sslCertPath',
+        'ECHOS_SERVER_SSL_KEY_PATH': 'sslKeyPath',
+        'ECHOS_SERVER_SSL_CERT_CHAIN_PATH': 'sslCertChainPath',
+        'ECHOS_SERVER_SSL_PASSPHRASE': 'sslPassphrase'
     };
 
     /**
