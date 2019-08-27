@@ -120,6 +120,8 @@ export class Server {
         this.io = io(httpServer, this.options.socketio);
         this.io.adapter(redis(this.options.databaseConfig.redis));
 
+        Log.success('Server scalability is ready.');
+
         return this.io;
     }
 
