@@ -4,6 +4,7 @@ var https = require('https');
 var express = require('express');
 var url = require('url');
 var io = require('socket.io');
+var redis = require('socket.io-redis');
 import { Log } from './log';
 
 export class Server {
@@ -116,7 +117,10 @@ export class Server {
 
         this.authorizeRequests();
 
-        return this.io = io(httpServer, this.options.socketio);
+        this.io = io(httpServer, this.options.socketio);
+        this.io.adapter(redis(this.options.databaseConfig.redis));
+
+        return this.io;
     }
 
     /**
